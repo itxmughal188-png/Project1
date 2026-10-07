@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <h1>City Care Hospital</h1>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="book_appointment.html">Book Appointment</a></li>
+            <li><a href="my_appointments.html">My Appointments</a></li>
+            <li><a href="medical_records.html">Medical Records</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="form-container">
+    <h2>Book Appointment</h2>
+
+    
+
+    
+
+    <form method="POST">
+
+        <!-- Doctor -->
+        <div class="form-group">
+            <label>Select Doctor</label>
+            <select name="doctor_id" onchange="this.form.submit()" required>
+                <option value="">Choose Doctor</option>
+                
+            </select>
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label>Appointment Date</label>
+            <input type="date"
+                   name="appointment_date"
+                   min=""
+                   value=""
+                   onchange="this.form.submit()"
+                   required >
+        </div>
+
+        <!-- Time -->
+        <div class="form-group">
+            <label>Appointment Time</label>
+            
+                <input type="time" disabled>
+            
+        </div>
+
+        <!-- Disease -->
+        <div class="form-group">
+            <label>Disease / Reason</label>
+            <textarea name="disease" required></textarea>
+        </div>
+
+        <button type="submit"
+                class="btn-submit"
+                >
+            Book Appointment
+        </button>
+
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 City Care Hospital. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

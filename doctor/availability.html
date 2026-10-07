@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability - Doctor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>City Care Hospital</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="medical_records.html">Medical Records</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2>Manage Availability</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
+                <!-- Add Availability Form -->
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">Add Availability</h3>
+                    
+                    
+                    
+                    
+                    
+                    <form method="POST" action="">
+                        <div class="form-group">
+                            <label>Day of Week</label>
+                            <select name="day_of_week" required>
+                                <option value="">Select Day</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Start Time</label>
+                            <input type="time" name="start_time" required>
+                        </div>
+                        <div class="form-group">
+                            <label>End Time</label>
+                            <input type="time" name="end_time" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Add Availability</button>
+                    </form>
+                </div>
+                
+                <!-- Current Availability -->
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">Current Availability</h3>
+                    
+                    
+                        <p>No availability set yet. Please add your available time slots.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 City Care Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

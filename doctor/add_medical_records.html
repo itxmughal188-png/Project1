@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records - Doctor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>🏥 City Care Hospital</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="medical_records.html">Medical Records</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+<!--- Add medical record--->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Medical Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Add Medical Record</h2>
+
+    <p><strong>Patient:</strong> </p>
+
+   
+
+    <form method="POST">
+
+        <div class="form-group">
+            <label>Diagnosis</label>
+            <textarea name="diagnosis" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Prescription</label>
+            <textarea name="prescription"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Lab Reports</label>
+            <textarea name="lab_reports"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Record Date</label>
+            <input type="date" name="record_date" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Save Medical Record</button>
+    </form>
+</div>
+
+</body>
+</html>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 City Care Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

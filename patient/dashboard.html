@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - City Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>City Care Hospital</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="book_appointment.html">Book Appointment</a></li>
+                <li><a href="my_appointments.html">My Appointments</a></li>
+                <li><a href="medical_records.html">Medical Records</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <section class="section">
+        <div class="container">
+            <div class="welcome-section">
+                <h2>Welcome, !</h2>
+                <p>Manage your appointments and health records</p>
+            </div>
+
+            <!-- Quick Info Cards -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
+                <!-- Today's Appointment -->
+                <div class="card">
+                    <h3>📅 Today's Appointment</h3>
+                    
+                        <p>No appointment scheduled for today</p>
+                    
+                </div>
+
+                <!-- Last Appointment -->
+                <div class="card">
+                    <h3>🩺 Last Appointment</h3>
+                    
+                        <p>No previous appointments</p>
+                    
+                </div>
+
+                <!-- Quick Action -->
+                <div class="card">
+                    <h3>⚡ Quick Action</h3>
+                    <p>Book your next appointment with our expert doctors</p>
+                    <a href="book_appointment.html" class="btn btn-primary" style="margin-top: 20px;">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 City Care Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
